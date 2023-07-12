@@ -10,7 +10,7 @@ import { isAdmin, requireSignIn } from "../controllers/middlewares/authMiddlewar
 
 //router object
 const router = express.Router()
-/*
+
 //routing
 //REGISTER || METHOD POST
 router.post('/register', registerController)
@@ -25,5 +25,5 @@ router.get('/test', requireSignIn, isAdmin, testController)
 router.get('/user-auth', requireSignIn, (req,res) => {
     res.status(200).send({ ok: true });
 })
-*/
+
 export default router
